@@ -42,8 +42,8 @@ function LinkButton({
     <a
       className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-4 text-sm font-semibold transition ${className}`}
       href={href}
-      rel="noreferrer"
-      target="_blank"
+      rel={href.startsWith("#") ? undefined : "noreferrer"}
+      target={href.startsWith("#") ? undefined : "_blank"}
     >
       {children}
     </a>
@@ -114,8 +114,8 @@ export default function Home() {
               music.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <LinkButton href={musicFolderUrl}>
-                <Play className="h-4 w-4" /> Hear the reel
+              <LinkButton href="#music">
+                <Play className="h-4 w-4" /> Hear the music
               </LinkButton>
               <LinkButton href={sfxFolderUrl} tone="light">
                 Open SFX library <ArrowUpRight className="h-4 w-4" />
@@ -236,21 +236,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-line bg-ink text-paper">
+      <section className="border-b border-line bg-ink text-paper" id="music">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-16 md:grid-cols-2 md:px-8 md:py-20">
           <div>
             <SectionLabel>Music</SectionLabel>
-            <h2 className="text-3xl font-black md:text-4xl">Scoring, songs, cues, and trailers.</h2>
-            <div className="mt-7 grid gap-2">
+            <h2 className="text-3xl font-black md:text-4xl">
+              Scoring, songs, cues, and trailers.
+            </h2>
+            <div className="mt-7 grid gap-3">
               {musicPieces.map((piece) => (
-                <div
-                  className="flex items-center justify-between rounded-md border border-white/12 bg-white/6 px-4 py-3"
-                  key={piece}
-                >
-                  <span className="text-sm font-semibold">{piece}</span>
-                  <span className="text-xs font-bold uppercase tracking-[0.14em] text-signal">
-                    Music
-                  </span>
+                <div className="rounded-md border border-white/12 bg-white/6 p-4" key={piece.src}>
+                  <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
+                    <div>
+                      <h3 className="text-base font-black">{piece.title}</h3>
+                      <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-paper/52">
+                        {piece.category}
+                      </p>
+                    </div>
+                    <span className="rounded-md bg-signal px-2.5 py-1 text-xs font-black uppercase tracking-[0.12em] text-ink">
+                      Play
+                    </span>
+                  </div>
+                  <audio className="audio-player w-full" controls preload="metadata">
+                    <source src={piece.src} type="audio/mpeg" />
+                  </audio>
                 </div>
               ))}
             </div>

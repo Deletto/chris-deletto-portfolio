@@ -89,17 +89,71 @@ export const featured = [
 ];
 
 export const musicPieces = [
-  "Spherix Open World",
-  "Spherix Zen Night",
-  "Bittersweet Departure",
-  "Orchestral Horror",
-  "Journey To Somewhere",
-  "Mystery",
-  "Drama Inspirational",
-  "Drama Cue",
-  "Explore Cue",
-  "Slow Motion Gamble - Sci Fi",
-  "Untitled Space Game - Electronic",
+  {
+    title: "Spherix Open World",
+    category: "Open world cue",
+    src: "/audio/spherix-open-world.mp3",
+  },
+  {
+    title: "Spherix Zen Night",
+    category: "Ambient world cue",
+    src: "/audio/spherix-zen-night.mp3",
+  },
+  {
+    title: "Bittersweet Departure",
+    category: "Emotional score",
+    src: "/audio/bittersweet-departure.mp3",
+  },
+  {
+    title: "Orchestral Horror",
+    category: "Horror score",
+    src: "/audio/orchestral-horror.mp3",
+  },
+  {
+    title: "Journey To Somewhere",
+    category: "Adventure cue",
+    src: "/audio/journey-to-somewhere.mp3",
+  },
+  {
+    title: "Mystery",
+    category: "Suspense cue",
+    src: "/audio/mystery.mp3",
+  },
+  {
+    title: "Drama Inspirational",
+    category: "Dramatic score",
+    src: "/audio/drama-inspirational.mp3",
+  },
+  {
+    title: "Drama Cue",
+    category: "Drama cue",
+    src: "/audio/drama-cue.mp3",
+  },
+  {
+    title: "Explore Cue",
+    category: "Exploration cue",
+    src: "/audio/explore-cue.mp3",
+  },
+  {
+    title: "Slow Motion Gamble - Sci Fi",
+    category: "Sci-fi cue",
+    src: "/audio/slow-motion-gamble-sci-fi.mp3",
+  },
+  {
+    title: "Untitled Space Game - Electronic",
+    category: "Electronic game cue",
+    src: "/audio/untitled-space-game-electronic.mp3",
+  },
+  {
+    title: "Piano Intro",
+    category: "Piano cue",
+    src: "/audio/piano-intro.mp3",
+  },
+  {
+    title: "Unused 2K Playgrounds Beat",
+    category: "Sports beat",
+    src: "/audio/unused-2k-playgrounds-beat.mp3",
+  },
 ];
 
 export const sfxPieces = [

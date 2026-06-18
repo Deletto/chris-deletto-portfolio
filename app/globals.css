@@ -46,3 +46,9 @@ a {
   );
   mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
+
+.audio-player {
+  height: 42px;
+  border-radius: 6px;
+  color-scheme: dark;
+}
