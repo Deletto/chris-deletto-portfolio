@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Chris D'Eletto | Game Audio Portfolio",
+  title: "Chris D'Eletto | Composer Reel & Game Audio",
   description:
-    "Game audio director, composer, sound designer, and music producer for games, film, television, and artist projects.",
+    "Dark cinematic game audio portfolio for composer, sound designer, and audio director Chris D'Eletto.",
 };
 
 export default function RootLayout({

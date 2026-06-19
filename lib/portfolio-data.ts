@@ -1,213 +1,118 @@
-import {
-  Disc3,
-  Film,
-  Gamepad2,
-  Headphones,
-  Mic2,
-  Radio,
-  Sparkles,
-  Waves,
-} from "lucide-react";
-
-export const portfolioUrl =
-  "https://drive.google.com/drive/folders/106q1ICZln3-ezMlnkSuWyPMHPiuFXtei";
-
-export const musicFolderUrl =
-  "https://drive.google.com/drive/folders/1iaN-OkrHcj_i2V70WVU0XDPltphX8Xot";
-
-export const sfxFolderUrl =
-  "https://drive.google.com/drive/folders/14Zs-6ricx_gs0MtudTI7rdOmzenGjp6R";
-
-export const reelFileId = "1JBOFey56nWFWSi2Aa0_3nPXMXC_Ri6fz";
-
-export const reelPreviewUrl = `https://drive.google.com/file/d/${reelFileId}/preview`;
-
-export const reelViewUrl = `https://drive.google.com/file/d/${reelFileId}/view`;
-
-export const stats = [
-  { value: "12+", label: "years in music & entertainment" },
-  { value: "UE5", label: "audio pipelines & implementation" },
-  { value: "AAA", label: "released and unreleased game work" },
-  { value: "2", label: "core disciplines: music + sound" },
-];
-
-export const credits = [
-  {
-    title: "Evil Dead: The Game",
-    role: "Original song co-writer / lyrics",
-    type: "Released game",
-  },
-  {
-    title: "Saber Interactive",
-    role: "Composer / sound designer for released and unreleased projects",
-    type: "Game studio",
-  },
-  {
-    title: "Wicked Games",
-    role: "Audio director, composer, UE5 implementation, pipeline ownership",
-    type: "Current",
-  },
-  {
-    title: "Bus Bound",
-    role: "Original music",
-    type: "Game music",
-  },
-  {
-    title: "Docked",
-    role: "Original music",
-    type: "Game music",
-  },
-  {
-    title: "SPHERIX",
-    role: "Trailer music/editing, open-world cues, dungeon ambience, game SFX",
-    type: "Portfolio",
-  },
-];
-
-export const featured = [
-  {
-    title: "Video Game Composer Reel",
-    label: "Featured reel",
-    body: "A focused reel for game composition, scoring, trailer work, and production-forward audio.",
-    icon: Film,
-    href: reelViewUrl,
-  },
-  {
-    title: "Evil Dead: Burn Them Down",
-    label: "Released game song",
-    body: "Original song work and lyrics contribution for Evil Dead: The Game.",
-    icon: Mic2,
-    href: musicFolderUrl,
-  },
-  {
-    title: "SPHERIX Gameplay Trailer",
-    label: "Game trailer",
-    body: "Music and editing for a gameplay trailer, plus supporting world and ambience cues.",
-    icon: Gamepad2,
-    href: musicFolderUrl,
-  },
-];
+export const reelSrc = "/video/chris-deletto-composer-reel-web.mp4";
+export const instagramUrl = "https://instagram.com/delettomusic";
+export const resumeUrl = "/resume/Chris-DEletto-Game-Audio-Resume.docx";
 
 export const musicPieces = [
   {
     title: "Spherix Open World",
-    category: "Open world cue",
+    category: "Open World Cue",
     src: "/audio/spherix-open-world.mp3",
+    cover: "/images/spherix-art.jpg",
   },
   {
     title: "Spherix Zen Night",
-    category: "Ambient world cue",
+    category: "Open World Night Cue",
     src: "/audio/spherix-zen-night.mp3",
+    cover: "/images/spherix-art.jpg",
+  },
+  {
+    title: "Someone's In My Fruit Cellar",
+    category: "Orchestral Horror Cue",
+    src: "/audio/orchestral-horror.mp3",
+    cover: "/images/evil-dead-the-game-album-art.jpg",
+  },
+  {
+    title: "NBA 2k Playgrounds Alternate",
+    category: "Sports Beat",
+    src: "/audio/unused-2k-playgrounds-beat.mp3",
+    cover: "/images/nba2k-playgrounds-album-art.jpg",
   },
   {
     title: "Bittersweet Departure",
-    category: "Emotional score",
+    category: "Drama/Emotional Cue",
     src: "/audio/bittersweet-departure.mp3",
-  },
-  {
-    title: "Orchestral Horror",
-    category: "Horror score",
-    src: "/audio/orchestral-horror.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
     title: "Journey To Somewhere",
-    category: "Adventure cue",
+    category: "Adventure Cue",
     src: "/audio/journey-to-somewhere.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Mystery",
-    category: "Suspense cue",
+    title: "Suddenly Changing",
+    category: "Action/Mystery Cue",
     src: "/audio/mystery.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Drama Inspirational",
-    category: "Dramatic score",
+    title: "Holding Hope To The Light",
+    category: "Drama/Emotional Cue",
     src: "/audio/drama-inspirational.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Drama Cue",
-    category: "Drama cue",
+    title: "Farewell to the Fallen",
+    category: "Drama Cue",
     src: "/audio/drama-cue.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Explore Cue",
-    category: "Exploration cue",
+    title: "Space In The Galaxy",
+    category: "Adventure/Sci-Fi Cue",
     src: "/audio/explore-cue.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Slow Motion Gamble - Sci Fi",
-    category: "Sci-fi cue",
+    title: "She Walks Slowly",
+    category: "Cyber-Pop Cue",
     src: "/audio/slow-motion-gamble-sci-fi.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Untitled Space Game - Electronic",
-    category: "Electronic game cue",
+    title: "Untitled Space Game",
+    category: "Electronic/Sci-Fi Cue",
     src: "/audio/untitled-space-game-electronic.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Piano Intro",
-    category: "Piano cue",
+    title: "Press Play",
+    category: "Drama/Mystery Cue",
     src: "/audio/piano-intro.mp3",
-  },
-  {
-    title: "Unused 2K Playgrounds Beat",
-    category: "Sports beat",
-    src: "/audio/unused-2k-playgrounds-beat.mp3",
+    cover: "/images/chris-deletto-album-art.jpg",
   },
 ];
 
-export const sfxPieces = [
-  "John Carpenter's Toxic Commando SFX",
-  "Atmosphere: Outdoors",
-  "Footsteps - Walk / Run / Jump",
-  "Weapons - Traditional",
-  "Horror SFX Texture",
-  "Suspense Texture",
-  "SPHERIX Dungeon Ambience",
-  "SPHERIX Quest Complete",
-  "Old Windmill SFX",
-  "Thriller Atmosphere Ambience",
-];
-
-export const services = [
+export const credits = [
   {
-    title: "Game Audio Direction",
-    body: "Defining the sonic identity, pipelines, priorities, and communication rhythms that keep audio aligned with gameplay.",
-    icon: Radio,
+    label: "Released Game",
+    title: "Evil Dead: The Game",
+    body: "Original song co-writer and lyrics contribution.",
   },
   {
-    title: "Original Music",
-    body: "Songs, score, adaptive cues, trailer music, cinematic themes, and production-ready mixes for games and screen.",
-    icon: Disc3,
+    label: "Studio Work",
+    title: "Saber Interactive",
+    body: "Composer and sound designer across released and unreleased game projects.",
   },
   {
-    title: "Sound Design",
-    body: "Atmospheres, footsteps, weapons, textures, impacts, gameplay feedback cues, and implementation-ready SFX.",
-    icon: Waves,
+    label: "Audio Direction",
+    title: "Wicked Games",
+    body: "Audio direction, original music, UE5 implementation, and pipeline ownership.",
   },
   {
-    title: "Full-Stack Production",
-    body: "Composition, recording, editing, mixing, mastering, asset prep, UE5 implementation, and final delivery support.",
-    icon: Headphones,
+    label: "Artist Career",
+    title: "Deletto",
+    body: "WMMR 93.3 Local Shots Artist of the Month, with coverage from Kerrang! and Ladygunn.",
   },
 ];
 
-export const keywords = [
-  "Game audio",
-  "Composition",
-  "Sound design",
-  "Unreal Engine 5",
-  "Music production",
-  "Mixing",
-  "Mastering",
-  "Audio pipelines",
-  "Trailer audio",
-  "Gameplay SFX",
-  "Atmospheres",
-  "Footsteps",
-  "Weapons",
-  "Creative direction",
-  "Fast turnaround",
+export const evilDeadVideos = [
+  {
+    title: "Evil Dead: The Game Song",
+    src: "https://www.youtube.com/embed/OgW65CzVYl8?si=DVAPJXMPOxeRlIkm",
+  },
+  {
+    title: "Evil Dead: The Game Song 2",
+    src: "https://www.youtube.com/embed/pPCAh6PA_wE?si=JnHUi-bHXZyRDv16",
+  },
 ];
-
-export const accentIcon = Sparkles;

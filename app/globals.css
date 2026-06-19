@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  background: #fafaf8;
-  color: #17141f;
+  background: #050505;
+  color: #f4f4f5;
 }
 
 * {
@@ -19,13 +19,14 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    linear-gradient(rgba(23, 20, 31, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(23, 20, 31, 0.04) 1px, transparent 1px),
-    #fafaf8;
-  background-size: 44px 44px;
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    #050505;
+  background-size: 56px 56px;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+  overflow-x: hidden;
 }
 
 button,
@@ -33,22 +34,112 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-::selection {
-  background: #b8ff5c;
-  color: #17141f;
+button {
+  font: inherit;
 }
 
-.waveform {
-  background-image: linear-gradient(
-    90deg,
-    rgba(184, 255, 92, 0.18) 0 1px,
-    transparent 1px 10px
-  );
-  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+::selection {
+  background: #b91c1c;
+  color: #ffffff;
+}
+
+.brand-mark,
+.display-title {
+  font-family:
+    Impact, Haettenschweiler, "Arial Narrow Bold", "Roboto Condensed",
+    "Helvetica Neue Condensed", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-shell {
+  min-height: calc(100vh - 73px);
+}
+
+.section-kicker {
+  color: #ef4444;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.reel-frame {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+  background: #000000;
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.62),
+    0 0 0 8px rgba(255, 255, 255, 0.03);
+}
+
+.track-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.track-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.035);
+  padding: 0.65rem;
+  color: inherit;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.track-row:hover {
+  border-color: rgba(239, 68, 68, 0.74);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.track-row:hover img {
+  transform: scale(1.04);
 }
 
 .audio-player {
-  height: 42px;
-  border-radius: 6px;
+  height: 38px;
   color-scheme: dark;
+}
+
+.youtube-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  background: #000000;
+}
+
+.credit-card {
+  min-height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.28);
+  padding: 1.25rem;
+}
+
+@media (max-width: 760px) {
+  .hero-shell {
+    min-height: auto;
+  }
+
+  .track-list {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .track-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
