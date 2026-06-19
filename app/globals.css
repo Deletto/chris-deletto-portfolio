@@ -75,6 +75,18 @@ button {
     0 0 0 8px rgba(255, 255, 255, 0.03);
 }
 
+.reel-caption {
+  font-family:
+    Impact, Haettenschweiler, "Arial Narrow Bold", "Roboto Condensed",
+    "Helvetica Neue Condensed", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #f4f4f5;
+}
+
 .track-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

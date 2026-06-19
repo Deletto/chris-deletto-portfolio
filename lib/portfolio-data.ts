@@ -17,7 +17,7 @@ export const musicPieces = [
   },
   {
     title: "Someone's In My Fruit Cellar",
-    category: "Orchestral Horror Cue",
+    category: "Horror Cue",
     src: "/audio/orchestral-horror.mp3",
     cover: "/images/evil-dead-the-game-album-art.jpg",
   },

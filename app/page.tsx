@@ -96,13 +96,12 @@ export default function Home() {
               <span>Chris</span>
               <span>D&apos;Eletto</span>
             </h1>
-            <p className="mt-5 max-w-lg text-sm font-black uppercase leading-6 text-zinc-100">
-              AAA composer and sound designer for games like Evil Dead: The
-              Game, Docked, Bus Bound and John Carpenter&apos;s Toxic Commando.
+            <p className="mt-5 max-w-lg text-sm uppercase leading-6 text-zinc-300">
+              AAA credits across Evil Dead: The Game, Bus Bound, and Docked.
             </p>
             <p className="mt-7 max-w-lg text-lg leading-7 text-zinc-300">
-              Cinematic cues, hard-hitting songs, game-ready sound, and
-              production-minded audio direction.
+              Cinematic cues, game-ready sound, and production-minded audio
+              direction.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <ActionLink href="#music">
@@ -125,8 +124,8 @@ export default function Home() {
                 <source src={reelSrc} type="video/mp4" />
               </video>
             </div>
-            <div className="mt-4 flex items-center justify-between gap-4 text-sm text-zinc-400">
-              <span>Composer Reel</span>
+            <div className="mt-4 flex justify-center">
+              <span className="reel-caption">Composer Reel</span>
             </div>
           </div>
         </div>
