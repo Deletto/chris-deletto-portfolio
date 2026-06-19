@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
   Download,
   Instagram,
-  Mail,
   Play,
 } from "lucide-react";
 import {
@@ -91,9 +90,6 @@ export default function Home() {
               </ActionLink>
               <ActionLink download href={resumeUrl}>
                 <Download className="h-4 w-4" /> Resume
-              </ActionLink>
-              <ActionLink href="mailto:ADD_EMAIL_HERE">
-                <Mail className="h-4 w-4" /> Email
               </ActionLink>
             </div>
           </div>
