@@ -52,27 +52,9 @@ export const musicPieces = [
     cover: "/images/chris-deletto-album-art.jpg",
   },
   {
-    title: "Farewell to the Fallen",
-    category: "Drama Cue",
-    src: "/audio/drama-cue.mp3",
-    cover: "/images/chris-deletto-album-art.jpg",
-  },
-  {
-    title: "Space In The Galaxy",
-    category: "Adventure/Sci-Fi Cue",
-    src: "/audio/explore-cue.mp3",
-    cover: "/images/chris-deletto-album-art.jpg",
-  },
-  {
     title: "She Walks Slowly",
     category: "Cyber-Pop Cue",
     src: "/audio/slow-motion-gamble-sci-fi.mp3",
-    cover: "/images/chris-deletto-album-art.jpg",
-  },
-  {
-    title: "Untitled Space Game",
-    category: "Electronic/Sci-Fi Cue",
-    src: "/audio/untitled-space-game-electronic.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
   },
   {
