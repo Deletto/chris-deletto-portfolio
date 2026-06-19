@@ -1,6 +1,6 @@
 export const reelSrc = "/video/chris-deletto-composer-reel-web.mp4";
 export const instagramUrl = "https://instagram.com/delettomusic";
-export const resumeUrl = "/resume/Chris-DEletto-Game-Audio-Resume.docx";
+export const resumeUrl = "/resume/Chris-DEletto-Game-Audio-Resume.pdf";
 
 export const musicPieces = [
   {
