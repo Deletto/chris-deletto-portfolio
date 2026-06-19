@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
 import {
   Download,
@@ -38,6 +41,19 @@ function ActionLink({
 }
 
 export default function Home() {
+  const audioRefs = useRef<Array<HTMLAudioElement | null>>([]);
+
+  function stopOtherTracks(activeIndex: number) {
+    audioRefs.current.forEach((player, index) => {
+      if (!player || index === activeIndex) {
+        return;
+      }
+
+      player.pause();
+      player.currentTime = 0;
+    });
+  }
+
   return (
     <main className="min-h-screen overflow-hidden bg-[#050505] text-zinc-100">
       <header className="sticky top-0 z-40 border-b border-white/10 bg-black/76 backdrop-blur-xl">
@@ -129,33 +145,37 @@ export default function Home() {
           </div>
 
           <div className="track-list">
-            {musicPieces.map((piece) => (
+            {musicPieces.map((piece, index) => (
               <article className="track-row" key={piece.src}>
-                  <span className="relative h-16 w-16 shrink-0 overflow-hidden bg-zinc-950">
-                    <Image
-                      alt=""
-                      className="h-full w-full object-cover transition duration-500"
-                      fill
-                      sizes="64px"
-                      src={piece.cover}
-                    />
-                    <span className="absolute inset-0 bg-black/24" />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate text-base font-black text-zinc-50">
-                      {piece.title}
-                    </span>
-                    <span className="mt-1 block truncate text-xs font-bold uppercase text-zinc-500">
-                      {piece.category}
-                    </span>
-                  </span>
-                  <audio
-                    className="audio-player w-full md:max-w-[250px]"
-                    controls
-                    preload="metadata"
-                    src={piece.src}
+                <span className="relative h-16 w-16 shrink-0 overflow-hidden bg-zinc-950">
+                  <Image
+                    alt=""
+                    className="h-full w-full object-cover transition duration-500"
+                    fill
+                    sizes="64px"
+                    src={piece.cover}
                   />
-                </article>
+                  <span className="absolute inset-0 bg-black/24" />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-base font-black text-zinc-50">
+                    {piece.title}
+                  </span>
+                  <span className="mt-1 block truncate text-xs font-bold uppercase text-zinc-500">
+                    {piece.category}
+                  </span>
+                </span>
+                <audio
+                  ref={(element) => {
+                    audioRefs.current[index] = element;
+                  }}
+                  className="audio-player w-full md:max-w-[250px]"
+                  controls
+                  onPlay={() => stopOtherTracks(index)}
+                  preload="metadata"
+                  src={piece.src}
+                />
+              </article>
             ))}
           </div>
         </div>
