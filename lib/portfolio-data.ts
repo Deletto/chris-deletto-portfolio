@@ -98,3 +98,14 @@ export const evilDeadVideos = [
     src: "https://www.youtube.com/embed/pPCAh6PA_wE?si=JnHUi-bHXZyRDv16",
   },
 ];
+
+export const releasedGameVideos = [
+  {
+    title: "Bus Bound",
+    src: "https://www.youtube.com/embed/KwohVA2aVCs?si=aldVjE7ywwYBVyjA",
+  },
+  {
+    title: "Docked",
+    src: "https://www.youtube.com/embed/3VLYkH_ts0M?si=A2vTue_ENsOy_juA",
+  },
+];

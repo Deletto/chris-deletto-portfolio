@@ -12,6 +12,7 @@ import {
   evilDeadVideos,
   instagramUrl,
   musicPieces,
+  releasedGameVideos,
   reelSrc,
   resumeUrl,
 } from "@/lib/portfolio-data";
@@ -96,12 +97,8 @@ export default function Home() {
               <span>Chris</span>
               <span>D&apos;Eletto</span>
             </h1>
-            <p className="mt-5 max-w-lg text-sm uppercase leading-6 text-zinc-300">
-              AAA credits across Evil Dead: The Game, Bus Bound, and Docked.
-            </p>
             <p className="mt-7 max-w-lg text-lg leading-7 text-zinc-300">
-              Cinematic cues, game-ready sound, and production-minded audio
-              direction.
+              AAA credits across Evil Dead: The Game, Bus Bound, and Docked.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <ActionLink href="#music">
@@ -206,6 +203,39 @@ export default function Home() {
                   title={video.title}
                 />
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-white/10 bg-[#080808]" id="released-game-video">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 md:grid-cols-[0.7fr_1.3fr] md:px-8 md:py-16">
+          <div>
+            <p className="section-kicker">Game Trailers</p>
+            <h2 className="display-title mt-2 text-5xl md:text-7xl">
+              Bus Bound & Docked
+            </h2>
+            <p className="mt-5 max-w-md text-sm leading-6 text-zinc-400">
+              Additional released game trailer work.
+            </p>
+          </div>
+          <div className="grid gap-7">
+            {releasedGameVideos.map((video) => (
+              <article className="released-video" key={video.src}>
+                <h3 className="display-title text-3xl text-zinc-100 md:text-4xl">
+                  {video.title}
+                </h3>
+                <div className="youtube-card mt-3">
+                  <iframe
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    src={video.src}
+                    title={video.title}
+                  />
+                </div>
+              </article>
             ))}
           </div>
         </div>
