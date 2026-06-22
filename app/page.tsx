@@ -92,12 +92,11 @@ export default function Home() {
       <section className="hero-shell relative isolate" id="top">
         <Image
           alt="Chris D'Eletto, game audio composer and sound designer"
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-left opacity-45 grayscale"
-          style={{ transform: 'scaleX(-1)' }}
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center opacity-55 grayscale"
           fill
           priority
           sizes="100vw"
-          src="/images/chris-deletto-portrait-bw.jpg"
+          src="/images/chris-deletto-hero-bg.jpg"
         />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.72),rgba(0,0,0,0.65)_44%,rgba(0,0,0,0.45)),radial-gradient(circle_at_78%_20%,rgba(130,13,24,0.28),transparent_30%)]" />
 
@@ -266,7 +265,7 @@ export default function Home() {
           <div className="about-image relative min-h-[430px] overflow-hidden rounded-sm border border-white/10 bg-zinc-950 md:min-h-full">
             <Image
               alt="Chris D'Eletto, game audio composer and sound designer"
-              className="h-full w-full object-cover object-[74%_38%]"
+              className="h-full w-full object-cover object-[50%_18%]"
               fill
               sizes="(min-width: 768px) 40vw, 100vw"
               src="/images/chris-deletto-portrait-bw.jpg"
