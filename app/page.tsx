@@ -265,7 +265,7 @@ export default function Home() {
           <div className="about-image relative min-h-[430px] overflow-hidden rounded-sm border border-white/10 bg-zinc-950 md:min-h-full">
             <Image
               alt="Chris D'Eletto, game audio composer and sound designer"
-              className="h-full w-full object-cover object-[50%_18%]"
+              className="h-full w-full object-cover object-[74%_52%]"
               fill
               sizes="(min-width: 768px) 40vw, 100vw"
               src="/images/chris-deletto-portrait-bw.jpg"
