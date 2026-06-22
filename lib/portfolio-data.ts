@@ -1,4 +1,6 @@
 export const reelSrc = "/video/chris-deletto-composer-reel-web.mp4";
+export const emailAddress = "christopher.deletto@gmail.com";
+export const emailUrl = `mailto:${emailAddress}`;
 export const instagramUrl = "https://instagram.com/delettomusic";
 export const resumeUrl = "/resume/Chris-DEletto-Game-Audio-Resume.pdf";
 
@@ -8,60 +10,70 @@ export const musicPieces = [
     category: "Open World Cue",
     src: "/audio/spherix-open-world.mp3",
     cover: "/images/spherix-art.jpg",
+    coverAlt: "SPHERIX game art for Chris D'Eletto open world music cue",
   },
   {
     title: "Spherix Zen Night",
     category: "Open World Night Cue",
     src: "/audio/spherix-zen-night.mp3",
     cover: "/images/spherix-art.jpg",
+    coverAlt: "SPHERIX game art for Chris D'Eletto open world night music cue",
   },
   {
     title: "Someone's In My Fruit Cellar",
     category: "Horror Cue",
     src: "/audio/orchestral-horror.mp3",
     cover: "/images/evil-dead-the-game-album-art.jpg",
+    coverAlt: "Evil Dead: The Game art for Chris D'Eletto horror music cue",
   },
   {
     title: "NBA 2k Playgrounds Alternate",
     category: "Sports Beat",
     src: "/audio/unused-2k-playgrounds-beat.mp3",
     cover: "/images/nba2k-playgrounds-album-art.jpg",
+    coverAlt: "NBA 2K Playgrounds game art for Chris D'Eletto sports beat",
   },
   {
     title: "Bittersweet Departure",
     category: "Drama/Emotional Cue",
     src: "/audio/bittersweet-departure.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
+    coverAlt: "Chris D'Eletto game audio composer portfolio art",
   },
   {
     title: "Journey To Somewhere",
     category: "Adventure Cue",
     src: "/audio/journey-to-somewhere.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
+    coverAlt: "Chris D'Eletto game audio composer portfolio art",
   },
   {
     title: "Suddenly Changing",
     category: "Action/Mystery Cue",
     src: "/audio/mystery.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
+    coverAlt: "Chris D'Eletto game audio composer portfolio art",
   },
   {
     title: "Holding Hope To The Light",
     category: "Drama/Emotional Cue",
     src: "/audio/drama-inspirational.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
+    coverAlt: "Chris D'Eletto game audio composer portfolio art",
   },
   {
     title: "She Walks Slowly",
     category: "Cyber-Pop Cue",
     src: "/audio/slow-motion-gamble-sci-fi.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
+    coverAlt: "Chris D'Eletto game audio composer portfolio art",
   },
   {
     title: "Press Play",
     category: "Drama/Mystery Cue",
     src: "/audio/piano-intro.mp3",
     cover: "/images/chris-deletto-album-art.jpg",
+    coverAlt: "Chris D'Eletto game audio composer portfolio art",
   },
 ];
 

@@ -5,10 +5,12 @@ import Image from "next/image";
 import {
   Download,
   Instagram,
+  Mail,
   Play,
 } from "lucide-react";
 import {
   credits,
+  emailUrl,
   evilDeadVideos,
   instagramUrl,
   musicPieces,
@@ -26,7 +28,8 @@ function ActionLink({
   children: React.ReactNode;
   download?: boolean;
 }) {
-  const isInternal = href.startsWith("#") || href.startsWith("/");
+  const isInternal =
+    href.startsWith("#") || href.startsWith("/") || href.startsWith("mailto:");
 
   return (
     <a
@@ -73,16 +76,22 @@ export default function Home() {
               Credits
             </a>
           </div>
-          <ActionLink href={instagramUrl}>
-            <Instagram className="h-4 w-4" />{" "}
-            <span className="hidden sm:inline">Instagram</span>
-          </ActionLink>
+          <div className="flex items-center gap-2">
+            <ActionLink href={emailUrl}>
+              <Mail className="h-4 w-4" />{" "}
+              <span className="hidden sm:inline">Email</span>
+            </ActionLink>
+            <ActionLink href={instagramUrl}>
+              <Instagram className="h-4 w-4" />{" "}
+              <span className="hidden sm:inline">Instagram</span>
+            </ActionLink>
+          </div>
         </nav>
       </header>
 
       <section className="hero-shell relative isolate" id="top">
         <Image
-          alt=""
+          alt="Chris D'Eletto, game audio composer and sound designer"
           className="absolute inset-0 -z-20 h-full w-full object-cover opacity-40 grayscale"
           fill
           priority
@@ -99,6 +108,9 @@ export default function Home() {
             <h1 className="display-title flex flex-col gap-2 text-[clamp(3.7rem,9vw,8.4rem)] leading-[0.84]">
               <span>Chris</span>
               <span>D&apos;Eletto</span>
+              <span className="sr-only">
+                Game Audio Composer, Sound Designer, and Audio Director
+              </span>
             </h1>
             <p className="mt-7 max-w-lg text-lg leading-7 text-zinc-300">
               AAA game audio credits across multiple genres, with cinematic
@@ -152,7 +164,7 @@ export default function Home() {
               <article className="track-row" key={piece.src}>
                 <span className="relative h-16 w-16 shrink-0 overflow-hidden bg-zinc-950">
                   <Image
-                    alt=""
+                    alt={piece.coverAlt}
                     className="h-full w-full object-cover transition duration-500"
                     fill
                     sizes="64px"
@@ -252,7 +264,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 md:grid-cols-[0.86fr_1.14fr] md:px-8 md:py-16">
           <div className="about-image relative min-h-[430px] overflow-hidden rounded-sm border border-white/10 bg-zinc-950 md:min-h-full">
             <Image
-              alt="Chris D'Eletto sitting with guitar"
+              alt="Chris D'Eletto, game audio composer and sound designer, sitting with guitar"
               className="h-full w-full object-cover"
               fill
               sizes="(min-width: 768px) 40vw, 100vw"
