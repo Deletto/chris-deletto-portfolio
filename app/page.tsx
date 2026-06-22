@@ -92,7 +92,7 @@ export default function Home() {
       <section className="hero-shell relative isolate" id="top">
         <Image
           alt="Chris D'Eletto, game audio composer and sound designer"
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-right opacity-55 grayscale"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center opacity-30 grayscale"
           fill
           priority
           sizes="100vw"
@@ -264,11 +264,11 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 md:grid-cols-[0.86fr_1.14fr] md:px-8 md:py-16">
           <div className="about-image relative min-h-[430px] overflow-hidden rounded-sm border border-white/10 bg-zinc-950 md:min-h-full">
             <Image
-              alt="Chris D'Eletto, game audio composer and sound designer, sitting with guitar"
-              className="h-full w-full object-cover"
+              alt="Chris D'Eletto, game audio composer and sound designer"
+              className="h-full w-full object-cover object-top"
               fill
               sizes="(min-width: 768px) 40vw, 100vw"
-              src="/images/chris-deletto-guitar.png"
+              src="/images/chris-deletto-portrait-bw.jpg"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.5))]" />
           </div>
