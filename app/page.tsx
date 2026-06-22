@@ -92,11 +92,11 @@ export default function Home() {
       <section className="hero-shell relative isolate" id="top">
         <Image
           alt="Chris D'Eletto, game audio composer and sound designer"
-          className="absolute inset-0 -z-20 h-full w-full object-cover opacity-40 grayscale"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-right opacity-55 grayscale"
           fill
           priority
           sizes="100vw"
-          src="/images/chris-deletto-black-background-sitting.png"
+          src="/images/chris-deletto-portrait-bw.jpg"
         />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.94),rgba(0,0,0,0.68)_44%,rgba(0,0,0,0.38)),radial-gradient(circle_at_78%_20%,rgba(130,13,24,0.28),transparent_30%)]" />
 
