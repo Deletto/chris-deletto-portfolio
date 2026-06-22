@@ -67,11 +67,6 @@ export const musicPieces = [
 
 export const credits = [
   {
-    label: "Released Game",
-    title: "Evil Dead: The Game",
-    body: "Original song co-writer and lyrics contribution.",
-  },
-  {
     label: "Studio Work",
     title: "Saber Interactive",
     body: "Composer and sound designer across released and unreleased game projects.",
