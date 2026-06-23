@@ -147,27 +147,29 @@ export default function Home() {
         {/* Shipped Titles Strip */}
         <div className="border-t border-white/10 px-5 pb-6 pt-5 md:px-8">
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.7fr_1.3fr]">
-            <div className="flex items-center">
-              <p className="text-xs font-black uppercase tracking-[0.2em] text-zinc-400">
+            <div />
+            <div>
+              <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-zinc-400">
                 Shipped Titles
               </p>
-            </div>
-            <div className="flex gap-3 overflow-x-auto [scrollbar-width:none]">
-              {shippedTitles.map((game) => (
-                <div
-                  key={game.title}
-                  title={game.title}
-                  className="relative aspect-video flex-1 min-w-[120px] overflow-hidden rounded-sm border border-white/10 opacity-75 transition-opacity duration-300 hover:opacity-100"
-                >
-                  <Image
-                    src={game.art}
-                    alt={game.title}
-                    fill
-                    sizes="150px"
-                    className="object-cover object-center"
-                  />
-                </div>
-              ))}
+              <div className="flex gap-3 overflow-x-auto [scrollbar-width:none]">
+                {shippedTitles.map((game) => (
+                  <div
+                    key={game.title}
+                    title={game.title}
+                    className="relative aspect-video flex-1 min-w-[120px] overflow-hidden rounded-sm border border-white/10 opacity-75 transition-opacity duration-300 hover:opacity-100"
+                  >
+                    <Image
+                      src={game.art}
+                      alt={game.title}
+                      fill
+                      sizes="150px"
+                      className="object-cover"
+                      style={{ objectPosition: game.objectPosition }}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

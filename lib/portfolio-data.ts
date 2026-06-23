@@ -78,10 +78,10 @@ export const musicPieces = [
 ];
 
 export const shippedTitles = [
-  { title: "John Carpenter's Toxic Commando", art: "/images/toxic-commando-banner.jpg" },
-  { title: "Evil Dead: The Game", art: "/images/evil-dead-banner.jpg" },
-  { title: "Docked", art: "/images/docked-banner.jpg" },
-  { title: "Bus Bound", art: "/images/bus-bound-banner.jpg" },
+  { title: "John Carpenter's Toxic Commando", art: "/images/toxic-commando-banner.jpg", objectPosition: "center" },
+  { title: "Evil Dead: The Game", art: "/images/evil-dead-banner.jpg", objectPosition: "left center" },
+  { title: "Docked", art: "/images/docked-banner.jpg", objectPosition: "center" },
+  { title: "Bus Bound", art: "/images/bus-bound-banner.jpg", objectPosition: "center" },
 ];
 
 export const credits = [
