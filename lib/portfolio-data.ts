@@ -77,6 +77,15 @@ export const musicPieces = [
   },
 ];
 
+export const shippedTitles = [
+  { title: "John Carpenter's Toxic Commando", art: "/images/toxic-commando-art.jpg" },
+  { title: "Evil Dead: The Game", art: "/images/evil-dead-art.jpg" },
+  { title: "Docked", art: "/images/docked-art.jpg" },
+  { title: "Bus Bound", art: "/images/bus-bound-art.jpg" },
+  { title: "NBA 2K Playgrounds", art: "/images/nba2k-playgrounds-album-art.jpg" },
+  { title: "Spherix", art: "/images/spherix-art.jpg" },
+];
+
 export const credits = [
   {
     label: "Studio Work",

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import {
   credits,
+  shippedTitles,
   emailUrl,
   evilDeadVideos,
   instagramUrl,
@@ -139,6 +140,35 @@ export default function Home() {
             </div>
             <div className="mt-4 flex justify-center">
               <span className="reel-caption">Composer Reel</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Shipped Titles Strip */}
+        <div className="border-t border-white/10 px-5 pb-6 pt-5 md:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="flex items-center gap-5 overflow-x-auto pb-1 [scrollbar-width:none]">
+              <p className="shrink-0 text-[0.6rem] font-black uppercase tracking-[0.2em] text-zinc-500">
+                Shipped Titles
+              </p>
+              <div className="h-5 w-px shrink-0 bg-white/10" />
+              <div className="flex gap-2.5">
+                {shippedTitles.map((game) => (
+                  <div
+                    key={game.title}
+                    title={game.title}
+                    className="relative h-[88px] w-[66px] shrink-0 overflow-hidden rounded-sm border border-white/10 opacity-60 transition-opacity duration-300 hover:opacity-100"
+                  >
+                    <Image
+                      src={game.art}
+                      alt={game.title}
+                      fill
+                      sizes="66px"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
