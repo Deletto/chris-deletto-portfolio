@@ -82,8 +82,6 @@ export const shippedTitles = [
   { title: "Evil Dead: The Game", art: "/images/evil-dead-art.jpg" },
   { title: "Docked", art: "/images/docked-art.jpg" },
   { title: "Bus Bound", art: "/images/bus-bound-art.jpg" },
-  { title: "NBA 2K Playgrounds", art: "/images/nba2k-playgrounds-album-art.jpg" },
-  { title: "Spherix", art: "/images/spherix-art.jpg" },
 ];
 
 export const credits = [
