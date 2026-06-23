@@ -146,29 +146,28 @@ export default function Home() {
 
         {/* Shipped Titles Strip */}
         <div className="border-t border-white/10 px-5 pb-6 pt-5 md:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex items-center gap-5 overflow-x-auto pb-1 [scrollbar-width:none]">
-              <p className="shrink-0 text-[0.6rem] font-black uppercase tracking-[0.2em] text-zinc-500">
+          <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.7fr_1.3fr]">
+            <div className="flex items-center">
+              <p className="text-[0.6rem] font-black uppercase tracking-[0.2em] text-zinc-500">
                 Shipped Titles
               </p>
-              <div className="h-5 w-px shrink-0 bg-white/10" />
-              <div className="flex gap-2.5">
-                {shippedTitles.map((game) => (
-                  <div
-                    key={game.title}
-                    title={game.title}
-                    className="relative h-[88px] w-[66px] shrink-0 overflow-hidden rounded-sm border border-white/10 opacity-60 transition-opacity duration-300 hover:opacity-100"
-                  >
-                    <Image
-                      src={game.art}
-                      alt={game.title}
-                      fill
-                      sizes="66px"
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+            </div>
+            <div className="flex gap-3 overflow-x-auto [scrollbar-width:none]">
+              {shippedTitles.map((game) => (
+                <div
+                  key={game.title}
+                  title={game.title}
+                  className="relative h-[90px] flex-1 min-w-[90px] overflow-hidden rounded-sm border border-white/10 opacity-70 transition-opacity duration-300 hover:opacity-100"
+                >
+                  <Image
+                    src={game.art}
+                    alt={game.title}
+                    fill
+                    sizes="150px"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
