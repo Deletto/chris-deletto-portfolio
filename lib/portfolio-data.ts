@@ -1,4 +1,5 @@
-export const reelSrc = "/video/chris-deletto-composer-reel-web.mp4";
+export const reelSrc =
+  "https://github.com/Deletto/chris-deletto-portfolio/releases/download/demo-reel-2026-update-2/Chris.Deletto.Video.Game.Demo.Reel.2026.Update.2.mp4";
 export const emailAddress = "christopher.deletto@gmail.com";
 export const emailUrl = `mailto:${emailAddress}`;
 export const instagramUrl = "https://instagram.com/delettomusic";

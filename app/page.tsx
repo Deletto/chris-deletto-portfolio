@@ -323,8 +323,8 @@ export default function Home() {
                 production, mixing, and mastering.
               </p>
               <p>
-                As Audio Director for Wicked Games, I understand how audio fits
-                into the larger development pipeline. I can help shape a
+                Through my Audio Director work with Wicked Games, I understand
+                how audio fits into the larger development pipeline. I can help shape a
                 project&apos;s overall sound, manage audio workflows, support
                 Unreal Engine 5 implementation, and collaborate closely with
                 developers so audio strengthens both gameplay and storytelling.

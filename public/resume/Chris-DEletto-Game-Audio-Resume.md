@@ -32,15 +32,6 @@ Game audio director, composer, sound designer, and music producer with 12+ years
 
 ## Professional Experience
 
-### Audio Director & Composer
-
-Wicked Games | March 2023 - Present
-
-- Direct the overall sound and music identity for game projects, aligning audio decisions with gameplay, narrative tone, and production goals.
-- Compose, produce, mix, and master original music for shipped and in-development game projects, including original music for Bus Bound and Docked.
-- Build and maintain audio workflows and implementation pipelines in Unreal Engine 5.
-- Collaborate with leadership and production stakeholders to prioritize audio tasks, manage feedback, and keep creative work moving under active development constraints.
-
 ### Composer / Sound Designer
 
 Saber Interactive | May 2022 - Present
@@ -49,6 +40,15 @@ Saber Interactive | May 2022 - Present
 - Co-wrote original songs and lyrics for Evil Dead: The Game.
 - Design original sounds and implementation-ready audio assets for major game projects, including unreleased AAA work under NDA.
 - Contribute polished, production-ready audio while adapting to established creative direction, technical constraints, and fast-moving development needs.
+
+### Audio Director & Composer
+
+Wicked Games | March 2023 - 2024
+
+- Direct the overall sound and music identity for game projects, aligning audio decisions with gameplay, narrative tone, and production goals.
+- Compose, produce, mix, and master original music for shipped and in-development game projects, including original music for Bus Bound and Docked.
+- Build and maintain audio workflows and implementation pipelines in Unreal Engine 5.
+- Collaborate with leadership and production stakeholders to prioritize audio tasks, manage feedback, and keep creative work moving under active development constraints.
 
 ### Freelance Composer / Audio Producer / Sound Designer
 
