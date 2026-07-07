@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -29,7 +28,8 @@ const personSchema = {
   ],
 };
 
-const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const gaMeasurementId =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-HZ5ND4DLPL";
 
 export default function RootLayout({
   children,
@@ -64,7 +64,6 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <Analytics />
       </body>
     </html>
   );

@@ -1,5 +1,3 @@
-import { track } from "@vercel/analytics";
-
 type EventProps = Record<string, string | number | boolean | undefined>;
 
 declare global {
@@ -23,7 +21,6 @@ export function trackPortfolioEvent(eventName: string, props: EventProps = {}) {
     return;
   }
 
-  track(eventLabels[eventName] ?? eventName, props);
   window.gtag?.("event", eventName, props);
   window.plausible?.(eventLabels[eventName] ?? eventName, { props });
 }
