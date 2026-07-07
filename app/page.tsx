@@ -19,6 +19,7 @@ import {
   reelSrc,
   resumeUrl,
 } from "@/lib/portfolio-data";
+import { trackPortfolioEvent } from "@/lib/analytics";
 
 function ActionLink({
   href,
@@ -47,6 +48,8 @@ function ActionLink({
 
 export default function Home() {
   const audioRefs = useRef<Array<HTMLAudioElement | null>>([]);
+  const trackedAudioPlays = useRef<Set<string>>(new Set());
+  const trackedReelPlay = useRef(false);
 
   function stopOtherTracks(activeIndex: number) {
     audioRefs.current.forEach((player, index) => {
@@ -56,6 +59,33 @@ export default function Home() {
 
       player.pause();
       player.currentTime = 0;
+    });
+  }
+
+  function trackReelPlay() {
+    if (trackedReelPlay.current) {
+      return;
+    }
+
+    trackedReelPlay.current = true;
+    trackPortfolioEvent("composer_reel_play", {
+      media_title: "Composer Reel",
+      media_type: "video",
+      media_src: reelSrc,
+    });
+  }
+
+  function trackAudioPlay(piece: (typeof musicPieces)[number]) {
+    if (trackedAudioPlays.current.has(piece.src)) {
+      return;
+    }
+
+    trackedAudioPlays.current.add(piece.src);
+    trackPortfolioEvent("audio_track_play", {
+      track_title: piece.title,
+      track_category: piece.category,
+      media_type: "audio",
+      media_src: piece.src,
     });
   }
 
@@ -132,6 +162,7 @@ export default function Home() {
               <video
                 className="aspect-video h-full w-full bg-black object-cover"
                 controls
+                onPlay={trackReelPlay}
                 playsInline
                 preload="metadata"
               >
@@ -216,7 +247,10 @@ export default function Home() {
                   }}
                   className="audio-player w-full md:max-w-[250px]"
                   controls
-                  onPlay={() => stopOtherTracks(index)}
+                  onPlay={() => {
+                    stopOtherTracks(index);
+                    trackAudioPlay(piece);
+                  }}
                   preload="metadata"
                   src={piece.src}
                 />
