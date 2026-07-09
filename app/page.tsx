@@ -163,7 +163,6 @@ export default function Home() {
                 autoPlay
                 className="aspect-video h-full w-full bg-black object-cover"
                 controls
-                muted
                 onPlay={trackReelPlay}
                 playsInline
                 preload="auto"
