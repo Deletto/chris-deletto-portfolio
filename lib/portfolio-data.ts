@@ -3,7 +3,7 @@ export const reelSrc =
 export const emailAddress = "christopher.deletto@gmail.com";
 export const emailUrl = `mailto:${emailAddress}`;
 export const instagramUrl = "https://instagram.com/delettomusic";
-export const resumeUrl = "/resume/Chris-DEletto-Game-Audio-Resume.pdf";
+export const resumeUrl = "/resume/Chris-DEletto-Game-Audio-Resume-Clean.pdf";
 
 export const musicPieces = [
   {

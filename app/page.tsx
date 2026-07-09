@@ -160,11 +160,13 @@ export default function Home() {
           <div className="relative" id="reel">
             <div className="reel-frame">
               <video
+                autoPlay
                 className="aspect-video h-full w-full bg-black object-cover"
                 controls
+                muted
                 onPlay={trackReelPlay}
                 playsInline
-                preload="metadata"
+                preload="auto"
               >
                 <source src={reelSrc} type="video/mp4" />
               </video>
